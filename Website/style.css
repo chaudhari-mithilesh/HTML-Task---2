@@ -34,30 +34,37 @@ header {
   justify-content: center;
 }
 
-nav {
+.navbar {
   position: absolute;
   top: 0;
   left: 0;
-  border: 10px solid red;
-  align-self: flex-start;
+  /* border: 10px solid red; */
+  /* align-self: flex-start; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 144rem;
   height: 12rem;
 }
 
-.bar {
-  width: 80%;
+nav {
   /* border: 10px solid red; */
+  width: 81.93%;
+  height: 60%;
   display: flex;
-  /* padding: 13rem 2.4rem; */
-  width: 11.79rem;
-  height: 7.2rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .brand {
   font-weight: 500;
   font-size: 4.8rem;
   line-height: 7.2rem;
-  /* align-self: flex-start; */
+  align-self: flex-start;
+}
+
+.list {
+  display: flex;
 }
 
 .nav-links {
@@ -68,6 +75,8 @@ nav {
   /* flex-direction: row; */
   align-items: flex-start;
   justify-content: center;
+  align-self: center;
+  /* justify-self: flex-end; */
   padding: 0;
   gap: 5rem;
 }
@@ -75,6 +84,10 @@ nav {
 .active {
   width: 14.1rem;
   height: 6.5rem;
+  font-size: 2.4rem;
+  float: right;
+  /* align-self: center;
+  justify-self: flex-end; */
 
   /* White-primary */
 
@@ -84,7 +97,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 5rem;
 }
+
+/* Hero Section */
 
 .hero {
   /* border: 10px solid red; */
