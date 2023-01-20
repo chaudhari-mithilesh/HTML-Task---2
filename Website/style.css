@@ -19,7 +19,7 @@ body {
 }
 
 header {
-  border: 10px solid red;
+  /* border: 10px solid red; */
   background: url(Images/hero-background.png);
   background-repeat: no-repeat;
   background-size: auto;
