@@ -357,7 +357,7 @@ nav {
 /* Section: reviews */
 
 .reviews {
-  background: #000000;
+  /* background: #000000; */
   height: 80.2rem;
   width: 100%;
   display: flex;
@@ -367,7 +367,7 @@ nav {
 }
 
 .reviews .remarks {
-  background: #3e86f5;
+  /* background: #3e86f5; */
   height: 46.5rem;
   width: 118rem;
   display: flex;
@@ -377,6 +377,11 @@ nav {
 }
 
 .card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 58rem;
   height: 46.5rem;
   background: #ffffff;
@@ -384,12 +389,62 @@ nav {
   padding-bottom: 5.5rem;
 }
 
-.page {
-  background: red;
-  width: 10rem;
-  height: 4rem;
+.card .quote {
+  width: 76%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 42px;
+  text-align: center;
+
+  /* color: #000000; */
 }
 
+.card p {
+  font-size: 2rem;
+  line-height: 4.2rem;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* Blue-primary */
+
+  /* color: #3e86f5; */
+}
+
+.card img {
+  top: 3.6rem;
+  position: absolute;
+}
+
+.page {
+  margin-top: 3rem;
+  /* background: red; */
+  width: 10rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.page button {
+  background: none;
+  height: 100%;
+  width: 40%;
+
+  border: 2px solid rgba(62, 134, 245, 0.5);
+  border-radius: 15px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+#previous {
+  border: 3px solid #3e86f5;
+  /* background: url(Images/Vector\ 2.png);
+  background-repeat: no-repeat; */
+}
+
+#next {
+  border: 3px solid #3e86f5;
+  /* background: url(Images/Vector\ 1.png);
+  background-repeat: no-repeat; */
+}
 /* Section: recommendation */
 
 .destination {
@@ -403,4 +458,73 @@ nav {
   width: 28rem;
   height: 29.3rem;
   background: yellow;
+}
+
+/* section: registration */
+
+.register {
+  /* border: 5px solid red; */
+  height: 82.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register div {
+  /* border: 5px solid red; */
+  width: 118rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 10rem; */
+  background: url(Images/registration.png);
+}
+
+.register h1 {
+  width: 74.3rem;
+  height: 15.1rem;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.register button {
+  border-radius: 2.5rem;
+  filter: drop-shadow(4px 8px 25px rgba(62, 134, 245, 0.25));
+}
+
+/* footer */
+
+footer {
+  /* position: absolute; */
+  /* bottom: 0;
+  left: 0%; */
+
+  /* border: 5px solid red; */
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  margin-left: 13rem;
+
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 4.2rem;
+}
+
+footer .nav-links {
+  align-self: center;
+  justify-self: end;
+}
+
+footer .nav-links a {
+  color: black;
+  /* border: 10px solid red; */
 }
