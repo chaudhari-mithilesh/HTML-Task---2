@@ -139,6 +139,11 @@ nav {
 /* Section: Tabs */
 
 .tabs {
+  position: absolute;
+  top: 80.3rem;
+  right: 5rem;
+  /* left: 13rem; */
+  /* right: 13rem; */
   width: 100%;
   height: 37.4rem;
   /* border: 10px solid red; */
@@ -164,8 +169,8 @@ nav {
 
   /* White-primary */
 
-  /* background: #ffffff; */
-  background: #000000;
+  background: #ffffff;
+  /* background: #000000; */
   /* background: orange; */
   border-radius: 25px 25px 0px 0px;
 }
@@ -176,8 +181,8 @@ nav {
   /* border: 10px solid red; */
   /* background-color: aqua; */
 
-  /* background: #ffffff; */
-  background: #000000;
+  background: #ffffff;
+  /* background: #000000; */
   /* background: orange; */
   box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.1);
   border-radius: 0 5rem 5rem 5rem;
@@ -185,14 +190,19 @@ nav {
 
 /* Section: offers */
 
+.offers .card {
+  margin-top: 4rem;
+}
 .offers,
 .recommendation {
+  margin-top: 22rem;
   width: 100%;
   height: 101.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* background-color: #000000; */
 }
 .offers h1,
 .recommendation h1 {
@@ -377,7 +387,7 @@ nav {
   flex-wrap: wrap;
 }
 
-.card {
+.cards {
   position: relative;
   display: flex;
   justify-content: center;
@@ -390,7 +400,7 @@ nav {
   padding-bottom: 5.5rem;
 }
 
-.card .quote {
+.cards .quote {
   width: 76%;
   font-weight: 500;
   font-size: 20px;
@@ -400,7 +410,7 @@ nav {
   /* color: #000000; */
 }
 
-.card p {
+.cards p {
   font-size: 2rem;
   line-height: 4.2rem;
   /* identical to box height */
@@ -412,7 +422,7 @@ nav {
   /* color: #3e86f5; */
 }
 
-.card img {
+.cards img {
   top: 3.6rem;
   position: absolute;
 }
@@ -457,25 +467,25 @@ nav {
   /* background-color: #ffffff; */
 }
 
-.dest {
+.card {
   width: 28rem;
-  height: 29.3rem;
+  min-height: 29.3rem;
   background: #ffffff;
   box-shadow: 0.4rem 0.4rem 2.5rem rgba(0, 0, 0, 0.1);
   border-radius: 2.5rem;
   margin: 2rem;
 }
 
-.dest .dest-img {
+.card .dest-img {
   padding: 1rem;
 }
 
-.dest .dest-name {
+.card .dest-name {
   display: flex;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
 }
-.dest .dest-name h1 {
+.card .dest-name h1 {
   padding-left: 1rem;
   /* justify-self: flex-start; */
   font-weight: 600;
@@ -488,9 +498,10 @@ nav {
   color: #000000;
 }
 
-.dest .dest-loc {
+.card .dest-loc {
   padding-left: 1rem;
-  /* padding-bottom: 1rem; */
+  padding-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 2.1rem;
