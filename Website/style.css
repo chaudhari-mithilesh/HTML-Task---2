@@ -127,6 +127,7 @@ nav {
 }
 
 .hero-subtext {
+  margin-top: 4rem;
   font-size: 2.4rem;
   line-height: 200%;
   font-weight: 500;
@@ -448,16 +449,60 @@ nav {
 /* Section: recommendation */
 
 .destination {
+  margin: 8rem 2rem;
   display: flex;
   /* align-items: center;
   justify-content: space-between; */
   flex-wrap: wrap;
+  /* background-color: #ffffff; */
 }
 
 .dest {
   width: 28rem;
   height: 29.3rem;
-  background: yellow;
+  background: #ffffff;
+  box-shadow: 0.4rem 0.4rem 2.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 2.5rem;
+  margin: 2rem;
+}
+
+.dest .dest-img {
+  padding: 1rem;
+}
+
+.dest .dest-name {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.dest .dest-name h1 {
+  padding-left: 1rem;
+  /* justify-self: flex-start; */
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  /* identical to box height */
+
+  /* Black-primary */
+
+  color: #000000;
+}
+
+.dest .dest-loc {
+  padding-left: 1rem;
+  /* padding-bottom: 1rem; */
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* identical to box height */
+
+  /* Black-75 */
+
+  color: rgba(0, 0, 0, 0.5);
 }
 
 /* section: registration */
