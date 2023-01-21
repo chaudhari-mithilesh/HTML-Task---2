@@ -105,6 +105,7 @@ nav {
 .hero {
   /* border: 10px solid red; */
   align-self: center;
+  flex-wrap: wrap;
 }
 
 .hero-title {
@@ -123,4 +124,65 @@ nav {
   height: 12.3rem;
   width: 78.4rem;
   text-align: center;
+}
+
+/* Section: Tabs */
+
+.tabs {
+  width: 100%;
+  height: 37.4rem;
+  /* border: 10px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.widget {
+  width: 118rem;
+  height: 100%;
+  /* border: 10px solid red; */
+}
+
+.facilities {
+  width: 27.9rem;
+  height: 10rem;
+  /* border: 10px solid red; */
+  /* background-color: red; */
+
+  /* White-primary */
+
+  background: #ffffff;
+  /* background: orange; */
+  border-radius: 25px 25px 0px 0px;
+}
+
+.facilities-disc {
+  width: 118rem;
+  height: 27.4rem;
+  /* border: 10px solid red; */
+  /* background-color: aqua; */
+
+  background: #ffffff;
+  /* background: orange; */
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.1);
+  border-radius: 0 5rem 5rem 5rem;
+}
+
+/* Section: offers */
+
+.offers {
+  width: 100%;
+  height: 101.5rem;
+}
+.offers h1 {
+  font-weight: 600;
+  font-size: 4.8rem;
+  line-height: 7.2rem;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* Black-primary */
+
+  color: #000000;
 }
