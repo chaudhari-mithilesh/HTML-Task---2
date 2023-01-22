@@ -19,15 +19,19 @@ html {
 }
 
 body {
+  /* position: relative; */
+  margin: 0 auto;
   background-color: #f7f7f7;
   max-width: 1440px;
 }
 
 header {
+  position: relative;
+  /* margin: 0 auto; */
   /* border: 10px solid red; */
   background: url(Images/hero-background.png);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
   min-height: 95.2rem;
   width: 100%;
 
@@ -40,6 +44,7 @@ header {
 }
 
 .navbar {
+  /* border: 10px solid red; */
   position: absolute;
   top: 0;
   left: 0;
@@ -112,6 +117,7 @@ nav {
 /* Hero Section */
 
 .hero {
+  min-height: 35.3rem;
   /* border: 10px solid red; */
   align-self: center;
   flex-wrap: wrap;
@@ -156,13 +162,13 @@ nav {
 }
 
 .widget {
-  width: 118rem;
+  max-width: 118rem;
   height: 100%;
   /* border: 10px solid red; */
 }
 
 .facilities {
-  width: 27.9rem;
+  max-width: 27.9rem;
   height: 10rem;
   /* border: 10px solid red; */
   /* background-color: red; */
@@ -176,7 +182,7 @@ nav {
 }
 
 .facilities-disc {
-  width: 118rem;
+  max-width: 118rem;
   height: 27.4rem;
   /* border: 10px solid red; */
   /* background-color: aqua; */
@@ -307,22 +313,28 @@ nav {
 
 .stats {
   width: 100%;
-  height: 96rem;
+  min-height: 96rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .stats img {
-  width: 480px;
-  height: 800px;
+  width: fit-content;
+  max-width: 480px;
+  max-height: 800px;
   background: #c4c4c4;
   border-radius: 75px;
 }
 
 .invitation {
+  margin-left: 2rem;
   width: 58rem;
   height: 59.7rem;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap-reverse; */
 }
 
 .stats h1 {
@@ -369,18 +381,19 @@ nav {
 
 .reviews {
   /* background: #000000; */
-  height: 80.2rem;
+  min-height: 80.2rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* flex-wrap: wrap; */
 }
 
 .reviews .remarks {
   /* background: #3e86f5; */
-  height: 46.5rem;
-  width: 118rem;
+  min-height: 46.5rem;
+  max-width: 118rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -461,8 +474,8 @@ nav {
 .destination {
   margin: 8rem 2rem;
   display: flex;
-  /* align-items: center;
-  justify-content: space-between; */
+  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   /* background-color: #ffffff; */
 }
@@ -478,6 +491,10 @@ nav {
 
 .card .dest-img {
   padding: 1rem;
+}
+.card .dest-img img {
+  width: 100%;
+  height: auto;
 }
 
 .card .dest-name {
@@ -520,7 +537,7 @@ nav {
 
 .register {
   /* border: 5px solid red; */
-  height: 82.2rem;
+  min-height: 82.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -529,13 +546,16 @@ nav {
 .register div {
   /* border: 5px solid red; */
   width: 118rem;
-  height: 50rem;
+  min-height: 50rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   /* border-radius: 10rem; */
   background: url(Images/registration.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .register h1 {
@@ -568,7 +588,9 @@ footer {
 }
 
 footer p {
-  margin-left: 13rem;
+  width: 100%;
+  text-align: center;
+  /* margin-left: auto; */
 
   font-weight: 500;
   font-size: 2rem;
@@ -576,6 +598,7 @@ footer p {
 }
 
 footer .nav-links {
+  width: 100%;
   align-self: center;
   justify-self: end;
 }
@@ -583,4 +606,53 @@ footer .nav-links {
 footer .nav-links a {
   color: black;
   /* border: 10px solid red; */
+}
+
+/* for tablets* */
+
+@media (min-width: 769px) and (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 426px) {
+  and html {
+    font-size: 45%;
+  }
+  body {
+    margin: 0 auto;
+  }
+
+  header {
+    background: linear-gradient(45deg, #d4145a, #fbb03b);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #000000;
+  }
+
+  .hero-title {
+    font-size: 4.2rem;
+  }
+
+  .register div {
+    background: none;
+    /* color: #000000; */
+  }
+  .register div h1 {
+    color: #000000;
+  }
+}
+
+@media (max-width: 425px) {
+  and html {
+    font-size: 70%;
+  }
+
+  body {
+    margin: 1ewm auto;
+  }
 }
