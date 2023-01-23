@@ -150,6 +150,7 @@ a.active {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   /* background: transparent; */
   top: 0px;
 }
@@ -157,7 +158,7 @@ a.active {
 .contain {
   /* background-color: red; */
   position: absolute;
-  top: -40%;
+  bottom: 0%;
 }
 
 .widget {
@@ -182,6 +183,7 @@ a.active {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .facilities button {
@@ -196,6 +198,7 @@ a.active {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 1rem;
 }
 
@@ -219,6 +222,7 @@ a.active {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .info {
@@ -228,6 +232,7 @@ a.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .info h3 {
@@ -253,17 +258,19 @@ a.active {
 }
 
 .info .place {
-  min-width: none;
+  /* min-width: none; */
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .info .dates {
-  min-width: none;
+  /* min-width: none; */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .info .icon {
@@ -276,6 +283,7 @@ a.active {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .info .search {
@@ -286,6 +294,7 @@ a.active {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .info .search button {
@@ -766,6 +775,10 @@ footer .nav-links a {
   .register div h1 {
     color: #000000;
   }
+
+  .info {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 427px) and (min-width: 376px) {
@@ -827,6 +840,10 @@ footer .nav-links a {
     position: relative;
     top: 20rem;
   }
+
+  .info {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 1025px) and (min-width: 999px) {
@@ -834,5 +851,83 @@ footer .nav-links a {
     /* border: 10px solid red; */
     position: relative;
     right: 6%;
+  }
+}
+@media (max-width: 361px) and (min-width: 300px) {
+  header {
+    background: linear-gradient(45deg, #d4145a, #fbb03b);
+    width: 100%;
+  }
+  .hero-title {
+    font-size: 2rem;
+    /* color: #000000; */
+    /* ; */
+  }
+  footer {
+    /* font-size: 1rem; */
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer p {
+    font-size: 2rem;
+    width: 51%;
+    /* text-align: left; */
+  }
+
+  footer ul li {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: auto;
+    font-size: 2rem;
+  }
+
+  .register div {
+    background: none;
+  }
+
+  .register h1 {
+    color: #000000;
+    font-size: 3rem;
+    width: 70%;
+  }
+
+  .register div button {
+    position: relative;
+    top: 20rem;
+  }
+
+  .remarks {
+    width: 85%;
+    /* justify-content: center; */
+    margin-top: 100%;
+  }
+  .remarks .quote {
+    font-size: 1.5rem;
+  }
+
+  .page button {
+    padding: 5rem;
+  }
+  .page {
+    position: relative;
+    right: 10%;
+    /* justify-content: center; */
+  }
+
+  .recommendation {
+    margin-top: 150%;
+  }
+
+  .stats {
+    margin-top: 100%;
+  }
+
+  .tabs {
+    width: 50%;
   }
 }
